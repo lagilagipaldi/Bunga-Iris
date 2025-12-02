@@ -1,12 +1,4 @@
-import pickle
-import numpy as np
-
-# Load model menggunakan pickle
-with open("knn_model.sav", "rb") as f:
-    clf = pickle.load(f)
-
-labels = ["setosa", "versicolor", "virginica"]
-
-def predict(data):
-    pred_idx = clf.predict(data)[0]
-    return labels[pred_idx]
+streamlit
+numpy
+pandas
+scikit-learn==1.3.2
