@@ -1,6 +1,7 @@
 import pickle
 import numpy as np
 
+# load model
 with open("knn_model.sav", "rb") as f:
     clf = pickle.load(f)
 
